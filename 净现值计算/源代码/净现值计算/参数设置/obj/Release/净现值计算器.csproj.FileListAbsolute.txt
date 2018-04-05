@@ -1,0 +1,9 @@
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\obj\Release\净现值计算器.csproj.GenerateResource.Cache
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\bin\Release\净现值计算器.exe.config
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\bin\Release\净现值计算器.exe
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\bin\Release\净现值计算器.pdb
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\obj\Release\净现值计算器.Properties.Resources.resources
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\obj\Release\净现值计算器.exe
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\obj\Release\净现值计算器.pdb
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\obj\Release\净现值计算器.csprojResolveAssemblyReference.cache
+E:\学习哒哒哒\大三下\软件过程与管理——王辉\程序\净现值计算\参数设置\obj\Release\净现值计算器.MainForm.resources
