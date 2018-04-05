@@ -35,9 +35,13 @@
 > 
 
 2.步骤如下:
+> 
+
  ![图片10](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/10.png) 
  > 
  3.计算结果之后出现值：
+ > 
+ 
   ![图片11](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/11.png) 
 
 三、卸载<br>
