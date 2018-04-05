@@ -2,6 +2,7 @@
 
 净现值计算器使用文档<br>
 ====
+
 一、安装<br>
 --
 > 
@@ -22,20 +23,22 @@
 ![图片6](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/6.png)
 > 
 ![图片7](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/7.png)  
-> 
+
 二、使用<br>
 --
 > 
-                <br>1.打开方式①文件夹下的  净现值计算器.exe 文件
- <br>   ![图片8](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/8.png)
-                <br>打开方式②桌面快捷键
- <br>   ![图片9](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/9.png)
-<               br>2.步骤如下:
- <br>   ![图片10](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/10.png) 
-                <br>3.计算结果之后出现值：
-<br>    ![图片11](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/11.png) 
+                1.打开方式①文件夹下的  净现值计算器.exe 文件
+![图片8](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/8.png)
+ 打开方式②桌面快捷键
+ ![图片9](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/9.png)
+2.步骤如下:
+ ![图片10](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/10.png) 
+ 3.计算结果之后出现值：
+  ![图片11](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/11.png) 
+
 三、卸载<br>
 --
+
 ![图片12](https://github.com/Rebecca3150/C-/blob/master/%E5%87%80%E7%8E%B0%E5%80%BC%E8%AE%A1%E7%AE%97/12.png)  
 > 
         右击，点击卸载即可
