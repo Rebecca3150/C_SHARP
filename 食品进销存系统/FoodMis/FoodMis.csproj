@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9663DDD-0BDE-466B-9E43-34D8FA9B4435}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FoodMis</RootNamespace>
+    <AssemblyName>FoodMis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hanbao.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>..\..\..\..\..\软件\CSkin 16.1.14.2\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddPayment.Designer.cs">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPurchasing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddPurchasing.Designer.cs">
+      <DependentUpon>AddPurchasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddReceipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddReceipt.Designer.cs">
+      <DependentUpon>AddReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckPayment.Designer.cs">
+      <DependentUpon>CheckPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckPurchasing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckPurchasing.Designer.cs">
+      <DependentUpon>CheckPurchasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C个人中心.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="C个人中心.Designer.cs">
+      <DependentUpon>C个人中心.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdminForm.Designer.cs">
+      <DependentUpon>FAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuyerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuyerForm.Designer.cs">
+      <DependentUpon>FBuyerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKucunForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKucunForm.Designer.cs">
+      <DependentUpon>FKucunForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSaleForm.Designer.cs">
+      <DependentUpon>FSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSupMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSupMainForm.Designer.cs">
+      <DependentUpon>FSupMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPrintForm.Designer.cs">
+      <DependentUpon>PaymentPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Print.Designer.cs">
+      <DependentUpon>Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X商品.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X商品.Designer.cs">
+      <DependentUpon>X商品.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X收款单.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="X收款单.Designer.cs">
+      <DependentUpon>X收款单.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X添加销售.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="X添加销售.Designer.cs">
+      <DependentUpon>X添加销售.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X用户设置.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="X用户设置.Designer.cs">
+      <DependentUpon>X用户设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X结算.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X结算.Designer.cs">
+      <DependentUpon>X结算.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X销售情况.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="X销售情况.Designer.cs">
+      <DependentUpon>X销售情况.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Zadmin.Designer.cs">
+      <DependentUpon>Zadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zcaigou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Zcaigou.Designer.cs">
+      <DependentUpon>Zcaigou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zxiaoshou.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Zxiaoshou.Designer.cs">
+      <DependentUpon>Zxiaoshou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="供应商管理.Designer.cs">
+      <DependentUpon>供应商管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="出库单详情.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="出库单详情.Designer.cs">
+      <DependentUpon>出库单详情.cs</DependentUpon>
+    </Compile>
+    <Compile Include="利润分析.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="利润分析.Designer.cs">
+      <DependentUpon>利润分析.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品添加.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="商品添加.Designer.cs">
+      <DependentUpon>商品添加.cs</DependentUpon>
+    </Compile>
+    <Compile Include="商品管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="商品管理.Designer.cs">
+      <DependentUpon>商品管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="客户管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="客户管理.Designer.cs">
+      <DependentUpon>客户管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="库存盘点.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="库存盘点.Designer.cs">
+      <DependentUpon>库存盘点.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="管理员管理.Designer.cs">
+      <DependentUpon>管理员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="采购员管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="采购员管理.Designer.cs">
+      <DependentUpon>采购员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="采购管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购管理.Designer.cs">
+      <DependentUpon>采购管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="销售员管理.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="销售员管理.Designer.cs">
+      <DependentUpon>销售员管理.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPayment.resx">
+      <DependentUpon>AddPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPurchasing.resx">
+      <DependentUpon>AddPurchasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddReceipt.resx">
+      <DependentUpon>AddReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPayment.resx">
+      <DependentUpon>CheckPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckPurchasing.resx">
+      <DependentUpon>CheckPurchasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C个人中心.resx">
+      <DependentUpon>C个人中心.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAdminForm.resx">
+      <DependentUpon>FAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuyerForm.resx">
+      <DependentUpon>FBuyerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKucunForm.resx">
+      <DependentUpon>FKucunForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSaleForm.resx">
+      <DependentUpon>FSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSupMainForm.resx">
+      <DependentUpon>FSupMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPrintForm.resx">
+      <DependentUpon>PaymentPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print.resx">
+      <DependentUpon>Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X商品.resx">
+      <DependentUpon>X商品.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X收款单.resx">
+      <DependentUpon>X收款单.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X添加销售.resx">
+      <DependentUpon>X添加销售.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X用户设置.resx">
+      <DependentUpon>X用户设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X结算.resx">
+      <DependentUpon>X结算.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X销售情况.resx">
+      <DependentUpon>X销售情况.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zadmin.resx">
+      <DependentUpon>Zadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zcaigou.resx">
+      <DependentUpon>Zcaigou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zxiaoshou.resx">
+      <DependentUpon>Zxiaoshou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商管理.resx">
+      <DependentUpon>供应商管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="出库单详情.resx">
+      <DependentUpon>出库单详情.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="利润分析.resx">
+      <DependentUpon>利润分析.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品添加.resx">
+      <DependentUpon>商品添加.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="商品管理.resx">
+      <DependentUpon>商品管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="客户管理.resx">
+      <DependentUpon>客户管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="库存盘点.resx">
+      <DependentUpon>库存盘点.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员管理.resx">
+      <DependentUpon>管理员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购员管理.resx">
+      <DependentUpon>采购员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购管理.resx">
+      <DependentUpon>采购管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="销售员管理.resx">
+      <DependentUpon>销售员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hanbao.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
